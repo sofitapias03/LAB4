@@ -22,6 +22,7 @@ Description : Responsive Layouts.
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
+		/*
 		div {
 			border: 1px dashed gray;	
 		}
@@ -37,6 +38,7 @@ Description : Responsive Layouts.
 		.small {
 			border: 1px solid yellow;	
 		}		
+		*/
 	</style>
 
     <style>
@@ -62,7 +64,8 @@ Description : Responsive Layouts.
 		
 		.gap {
 			/*I need some CSS codes.*/
-			padding: 10%;
+			clear: both;
+			height: 35px;
 		}
 
 		@media screen and (min-width: 769px) {			
@@ -80,7 +83,7 @@ Description : Responsive Layouts.
 				width: 30%;
 				
 			 }
-			 .menu {background-color: #f0f0f0; float: left;}
+			 
 		}
 
         @media screen and (max-width: 768px) {
@@ -97,7 +100,9 @@ Description : Responsive Layouts.
 				/*I need some CSS codes.*/
 				width: 40%;
 			 }
-			 .menu {background-color: #ccc;}
+			 .menu {width: 100%}
+			 .main { padding: 15px; margin-left: 0px;}
+			 
 			 
         }
 
@@ -116,8 +121,9 @@ Description : Responsive Layouts.
 				width: 100%;
 			 }
 			 h1 {font-size: 18px;}
-			 .menu {background-color: #ccc; }
+			 .menu {width: 100%}
 			 .main { padding: 15px; margin-left: 0px;}
+			 			 
         }
 
         
