@@ -18,6 +18,7 @@ Description : Responsive Layouts.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- First, link the menu.css file here -->
+	<link rel="stylesheet" href="menu.css">
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
@@ -49,64 +50,74 @@ Description : Responsive Layouts.
 		
 		.row { 
 			/*I need some CSS codes.*/
-
+			box-sizing: border-box;
+			display: block;
 		}
 
 		.large, .medium, .small {
 			/*I need some CSS codes.*/
+			box-sizing: border-box;
+			float: left;
 		}
 		
 		.gap {
 			/*I need some CSS codes.*/
+			padding: 10%;
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				img { max-width: 70%; height: auto; }
+				width: 70%;
+				
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				img { max-width: 30%; height: auto; }
+				width: 30%;
+				
 			 }
-			 .menu {background-color: #ccc;}
+			 .menu {background-color: #f0f0f0; float: left;}
 		}
 
         @media screen and (max-width: 768px) {
             /*I need some CSS codes.*/
 			.large { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				img { max-width: 60%; height: auto; }
+				width: 60%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				img { max-width: 40%; height: auto; }
+				width: 40%;
 			 }
+			 .menu {background-color: #ccc;}
+			 
         }
 
         @media screen and (max-width: 480px) {
 			/*I need some CSS codes.*/
 			.large { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			 }
 			 h1 {font-size: 18px;}
+			 .menu {background-color: #ccc; }
+			 .main { padding: 15px; margin-left: 0px;}
         }
 
         
