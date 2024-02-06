@@ -1,6 +1,6 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : responsive.html
 Assignment  : Lab 4 Exercise B
 Author(s)   : Sofia Tapias, Tanis Smith
 Submission  : Feb 5, 2024
@@ -18,9 +18,11 @@ Description : Responsive Layouts.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- First, link the menu.css file here -->
+	<link rel="stylesheet" href="menu.css">
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
+		/*
 		div {
 			border: 1px dashed gray;	
 		}
@@ -36,6 +38,7 @@ Description : Responsive Layouts.
 		.small {
 			border: 1px solid yellow;	
 		}		
+		*/
 	</style>
 
     <style>
@@ -49,64 +52,78 @@ Description : Responsive Layouts.
 		
 		.row { 
 			/*I need some CSS codes.*/
-
+			box-sizing: border-box;
+			display: block;
 		}
 
 		.large, .medium, .small {
 			/*I need some CSS codes.*/
+			box-sizing: border-box;
+			float: left;
 		}
 		
 		.gap {
 			/*I need some CSS codes.*/
+			clear: both;
+			height: 40px;
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				img { max-width: 70%; height: auto; }
+				width: 70%;
+				
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				img { max-width: 30%; height: auto; }
+				width: 30%;
+				
 			 }
-			 .menu {background-color: #ccc;}
+			 
 		}
 
         @media screen and (max-width: 768px) {
             /*I need some CSS codes.*/
 			.large { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				img { max-width: 60%; height: auto; }
+				width: 60%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				img { max-width: 40%; height: auto; }
+				width: 40%;
 			 }
+			 .menu {width: 100%}
+			 .main { padding: 15px; margin-left: 0px;}
+			 
+			 
         }
 
         @media screen and (max-width: 480px) {
 			/*I need some CSS codes.*/
 			.large { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				img { max-width: 100%; height: auto; }
+				width: 100%;
 			 }
 			 h1 {font-size: 18px;}
+			 .menu {width: 100%}
+			 .main { padding: 15px; margin-left: 0px;}
+			 			 
         }
 
         
@@ -165,7 +182,7 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Tanis and Sofia Take a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
